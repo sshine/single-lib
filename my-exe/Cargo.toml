@@ -1,8 +1,10 @@
 [package]
 name = "my-exe"
 version = "0.1.0"
-authors = ["{{authors}}"]
-edition = "2021"
+authors.workspace = true
+description.workspace = true
+repository.workspace = true
+edition.workspace = true
 
 [dependencies]
 my-lib = { version = "*", path = "../my-lib" }
