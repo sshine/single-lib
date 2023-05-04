@@ -5,4 +5,5 @@ members = ["my-lib", "my-exe"]
 authors = ["{{authors}}"]
 description = "{{description}}"
 repository = "https://github.com/{{github-username}}/{{project-name}}"
+homepage = "https://github.com/{{github-username}}/{{project-name}}"
 edition = "2021"
