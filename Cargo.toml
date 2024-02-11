@@ -1,5 +1,6 @@
 [workspace]
-members = ["my-lib", "my-exe"]
+resolver = "2"
+members = ["{{project-name}}"]
 
 [workspace.package]
 authors = ["{{authors}}"]
@@ -7,3 +8,7 @@ description = "{{description}}"
 repository = "https://github.com/{{github-username}}/{{project-name}}"
 homepage = "https://github.com/{{github-username}}/{{project-name}}"
 edition = "2021"
+
+[workspace.dependencies]
+clap = { version = "4.5" }
+tokio = { version = "1.36", features = ["full"] }
